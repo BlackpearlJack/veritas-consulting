@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color palette */
+  /* Primary color shades */
+  --color-primary-50: oklch(95.65% 0.021 274.04);
+  --color-primary-100: oklch(91.47% 0.041 265.71);
+  --color-primary-200: oklch(82.83% 0.044 264.95);
+  --color-primary-300: oklch(74.29% 0.043 264.26);
+  --color-primary-400: oklch(65.53% 0.045 264.20);
+  --color-primary-500: oklch(56.86% 0.045 264.81);
+  --color-primary-600: oklch(48.36% 0.044 261.91);
+  --color-primary-700: oklch(39.61% 0.045 261.01);
+  --color-primary-800: oklch(31.19% 0.046 260.05);
+  --color-primary-900: oklch(21.36% 0.048 257.95);
+
+  /* Secondary color shades */
+  --color-secondary-50: oklch(95.86% 0.036 78.14);
+  --color-secondary-100: oklch(91.49% 0.081 81.00);
+  --color-secondary-200: oklch(82.99% 0.104 82.19);
+  --color-secondary-300: oklch(74.34% 0.101 82.75);
+  --color-secondary-400: oklch(72.45% 0.100 82.35);
+  --color-secondary-500: oklch(65.66% 0.097 81.60);
+  --color-secondary-600: oklch(57.14% 0.093 82.17);
+  --color-secondary-700: oklch(39.85% 0.082 81.92);
+  --color-secondary-800: oklch(31.25% 0.064 82.01);
+  --color-secondary-900: oklch(22.41% 0.046 82.45);
+
+  /* Accent color shades */
+  --color-accent-50: oklch(94.71% 0.076 177.54);
+  --color-accent-100: oklch(89.80% 0.132 177.80);
+  --color-accent-200: oklch(81.14% 0.133 177.80);
+  --color-accent-300: oklch(72.59% 0.133 177.76);
+  --color-accent-400: oklch(64.04% 0.117 178.57);
+  --color-accent-500: oklch(55.51% 0.101 178.89);
+  --color-accent-600: oklch(47.24% 0.087 178.61);
+  --color-accent-700: oklch(38.92% 0.071 178.33);
+  --color-accent-800: oklch(30.48% 0.056 178.07);
+  --color-accent-900: oklch(21.79% 0.040 177.85);
+
+  /* Feedback & status colors */
+  --color-success: oklch(58% 0.30 134);
+  --color-success-foreground: oklch(100% 0 0);
+
+  --color-warning: oklch(70% 0.25 85);
+  --color-warning-foreground: oklch(22% 0 0);
+
+  --color-info: oklch(65% 0.20 240);
+  --color-info-foreground: oklch(100% 0 0);
+
+  --color-destructive: oklch(55% 0.30 30);
+  --color-destructive-foreground: oklch(100% 0 0);
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8f9fb;
+    color: #1e2f48;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #d4a825;
+    color: #050d1a;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}

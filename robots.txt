@@ -1,0 +1,6 @@
+# robots.txt for Consultancy
+# Allow all crawlers — update the Sitemap URL to your production sitemap location
+User-agent: *
+Allow: /
+Sitemap: https://yourdomain.com/sitemap.xml
+
