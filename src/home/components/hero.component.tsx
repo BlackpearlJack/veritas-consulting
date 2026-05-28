@@ -68,8 +68,9 @@ export default function Hero({ backgroundImage = "https://images.pexels.com/phot
           </h1>
 
           <p className="mb-10 max-w-2xl font-body text-sm font-light leading-relaxed text-white/55 sm:mb-12 sm:text-base md:text-lg">
-            We partner with forward-thinking organizations to transform ambiguity
-            into decisive, lasting advantage.
+            A strategic investment and industrial development consultancy firm specializing in
+            Special Economic Zones, cross-border investments, and sustainable
+            industrialization in Africa.
           </p>
 
           <div className="flex w-full max-w-2xl flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">

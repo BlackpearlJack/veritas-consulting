@@ -1,40 +1,40 @@
 import type { Service } from '@/home/types';
-import {HiOfficeBuilding} from "react-icons/hi";
-import {GiFarmTractor} from "react-icons/gi";
-import {SiWebmoney} from "react-icons/si";
-import {useEffect, useRef, useState} from "react";
-import {ServiceCard} from "@/components";
+import { useEffect, useRef, useState } from "react";
+import { ServiceCard } from "@/components";
+import { services as dataServices } from '@/services/data/services';
+import {
+  LuBuilding2,
+  LuGlobe,
+  LuScale,
+  LuFactory,
+  LuShip,
+  LuLeaf,
+  LuUserCheck,
+  LuWallet,
+  LuCpu
+} from "react-icons/lu";
 
+const icons = [
+  LuBuilding2,
+  LuGlobe,
+  LuScale,
+  LuFactory,
+  LuShip,
+  LuLeaf,
+  LuUserCheck,
+  LuWallet,
+  LuCpu
+];
 
-const services: Service[] = [
-  {
-    id: 1,
-    title: 'Real Estate',
-    description: "Strategic commercial and industrial developments in Nairobi's satellite cities, focused on high-yield logistics hubs",
-    icon: HiOfficeBuilding,
-    bg: 'bg-primary-100',
-    accent: 'text-secondary-500',
-    dark: false
-  },
-  {
-    id: 2,
-    title: "Agtech",
-    description: "Scaling precision agriculture platforms that bridge the gap between smallholder efficiency and global supply chains",
-    icon: GiFarmTractor,
-    bg: "bg-primary-900",
-    accent: "text-secondary-400",
-    dark: true
-  },
-  {
-    id: 3,
-    title: "FinTech",
-    description: "Investing in the infrastructure of the 'Silicon Savannah' focusing on cross-border payment trails and credit democratization for SMEs",
-    icon: SiWebmoney,
-    bg: "bg-primary-100",
-    accent: "text-secondary-500",
-    dark: false
-  }
-]
+const services: Service[] = dataServices.map((s, i) => ({
+  id: s.id,
+  title: s.title,
+  description: s.tagline,
+  icon: icons[i % icons.length],
+  bg: i % 2 === 0 ? 'bg-primary-50' : 'bg-primary-900',
+  accent: i % 2 === 0 ? 'text-secondary-500' : 'text-secondary-400',
+  dark: i % 2 !== 0
+}));
 
 export default function Services() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -58,10 +58,10 @@ export default function Services() {
         }`}
       >
         <p className="text-secondary-500 tracking-[0.4em] uppercase text-xs mb-6 block">
-          Core Services
+          Core Capabilities
         </p>
-        <h2 className="font-display text-5xl md:text-6xl text-navy-950 font-light">
-          Take your pic
+        <h2 className="font-display text-5xl md:text-6xl text-navy-950 font-light max-w-2xl">
+          Strategic Advisory for the Industrial Frontier
         </h2>
       </div>
 
@@ -77,5 +77,5 @@ export default function Services() {
         ))}
       </div>
     </section>
-  )
+  );
 }

@@ -26,10 +26,13 @@ export const services: ServiceItem[] = [
       'Veritas Crest is a leading advisor on Special Economic Zone (SEZ) matters in Kenya, with a proven track record of delivering strategic, results-driven solutions to a diverse portfolio of clients. We maintain an operational presence across all SEZs in the country, enabling seamless, on-the-ground advisory services to both zone developers and enterprises. Our close working relationship with the Special Economic Zones Authority (SEZA) gives us deep regulatory insight and a practical understanding of the evolving SEZ landscape.',
     benefits: [
       'Gazettement advisory and feasibility support for SEZ developers',
-      'End-to-end licensing of SEZ developers, operators and enterprises',
-      'One-Stop-Shop coordination with regulators and government agencies',
-      'Operational advisory including work permits and iTax status support',
-      'Practical regulatory guidance informed by SEZA engagement',
+      'End-to-end licensing for SEZ developers, operators, and enterprises',
+      'One-Stop-Shop coordination and government liaison with regulators',
+      'Operational and environmental compliance advisory services',
+      'Tax incentive activation and customs framework optimization',
+      'Liaising with KRA to effect iTax status for licensed entities',
+      'Obtaining work permits for SEZ enterprises via SEZA framework',
+      'Practical regulatory guidance informed by direct SEZA engagement'
     ],
     approach:
       'We combine regulatory insight, feasibility analysis and hands-on implementation to guide clients from concept to licensed, operational SEZ status. Our approach is pragmatic: we draft documentation required for gazettement, coordinate stakeholders across government and industry, secure licenses, and help enterprises operationalise within SEZs.',
@@ -44,33 +47,221 @@ export const services: ServiceItem[] = [
     },
     color: 'dark',
   },
-
   {
     id: 2,
     number: '02',
-    title: 'HR Outsourcing & Consulting',
+    title: 'Investment & Market Entry Advisory',
     tagline:
-      'End-to-end HR outsourcing, recruitment and strategy services tailored for Kenyan organisations',
+      'End-to-end strategy, FDI facilitation, and market entry support tailored for investors in African markets',
     longDescription:
-      'Veritas Crest delivers strategic HR outsourcing and advisory services that help organisations optimise human capital functions through efficient, compliant and scalable models. We combine local regulatory expertise with operational experience to deliver practical HR solutions aligned with business objectives.',
+      'Helping local and international investors establish, expand, and scale operations within African markets.',
     benefits: [
-      'Comprehensive HR consultancy and outsourcing',
-      'Recruitment and talent acquisition services',
-      'Strategy development, workforce planning and policy design',
-      'MSME-focused advisory and compliance support',
+      'Foreign Direct Investment (FDI) facilitation and investor onboarding support',
+      'Data-driven market entry strategy, feasibility studies, and market research',
+      'Compliant investment structuring and cross-border expansion advisory',
+      'Strategic partnership facilitation to accelerate local market integration',
     ],
     approach:
-      'We diagnose current HR capabilities, design fit-for-purpose outsourcing models and implement HR operations that scale. Our work emphasises regulatory compliance, streamlined payroll and benefits administration, and hands-on recruitment to fill critical roles quickly.',
+      'We combine deep market research with practical regulatory insight to build robust entry strategies. Our approach focuses on structuring investments securely, navigating local compliance, facilitating strategic local partnerships, and onboarding investors efficiently to minimize time-to-market.',
     caseStudy: {
-      client: 'National MSME Platform',
+      client: 'International Manufacturing Group',
       challenge:
-        'An organisation needed to scale HR operations rapidly to support growth across multiple Kenyan counties while remaining compliant with local labor laws.',
+        'An overseas investor needed to navigate regulatory hurdles, evaluate market feasibility, and establish a compliant operational structure to enter East African markets.',
       solution:
-        'Designed an outsourcing model, implemented payroll and benefits administration and ran targeted recruitment for key roles.',
+        'Conducted a comprehensive feasibility study, designed an optimized investment structure, and facilitated critical local strategic partnerships and onboarding.',
       outcome:
-        'Client reduced time-to-hire, improved payroll accuracy and achieved compliance across operations.',
+        'The client successfully launched regional operations within budget, secured regulatory clearance, and established a scalable local presence.',
     },
     color: 'light',
+  },
+  {
+    id: 3,
+    number: '03',
+    title: 'Corporate & Legal Advisory',
+    tagline:
+      'Comprehensive corporate secretarial, governance, and structural legal support tailored for SEZ compliance',
+    longDescription:
+      'Comprehensive corporate support designed to ensure legal compliance and operational efficiency within the Special Economic Zones.',
+    benefits: [
+      'Seamless company incorporation and specialized SEZ licensing setup',
+      'Reliable corporate secretarial services, governance, and board advisory',
+      'Robust commercial contract drafting and tailored regulatory compliance tracking',
+      'Meticulous structuring of shareholder and investment agreements',
+    ],
+    approach:
+      'We simplify complex corporate legalities by aligning statutory compliance with operational strategy. Our approach focuses on establishing clean corporate structures from day one, drafting watertight commercial agreements, and providing proactive secretarial support to keep your SEZ enterprise fully compliant with evolving frameworks.',
+    caseStudy: {
+      client: 'Fast-Growing SEZ Enterprise',
+      challenge:
+        'A multi-shareholder venture needed to rapidly incorporate, structure complex investment agreements, and establish a compliant governance framework to qualify for SEZ operational licenses.',
+      solution:
+        'Drafted tailored shareholder agreements, managed the end-to-end incorporation process, and structured their corporate governance policies to satisfy strict regulatory benchmarks.',
+      outcome:
+        'Achieved full compliance and successful incorporation, enabling the client to secure their SEZ license and launch operations with clear investor protections.',
+    },
+    color: 'dark',
+  },
+  {
+    id: 4,
+    number: '04',
+    title: 'Industrial Park & Infrastructure Advisory',
+    tagline:
+      'Strategic planning, PPP structuring, and development advisory for world-class industrial parks and logistics hubs',
+    longDescription:
+      'Strategic consulting for industrial parks, logistics hubs, and economic zone development projects.',
+    benefits: [
+      'Comprehensive SEZ & industrial park development advisory and framework design',
+      'Rigorous project feasibility studies and industrial ecosystem planning',
+      'End-to-end Public-Private Partnership (PPP) advisory and structuring support',
+      'Strategic infrastructure planning coordination and investor attraction strategies',
+    ],
+    approach:
+      'We take megaprojects from concept to execution by bridging the gap between infrastructure planning, financial viability, and regulatory design. Our approach focuses on modeling sustainable industrial ecosystems, alignment with PPP frameworks, and structuring environments that actively attract world-class anchor investors.',
+    caseStudy: {
+      client: 'Regional Logistics Hub Developer',
+      challenge:
+        'A development consortium required robust feasibility validation and a clear operational framework to structure a multi-million dollar industrial park project under a public-private framework.',
+      solution:
+        'Delivered a comprehensive master-planning feasibility study, mapped out the industrial ecosystem dependencies, and designed a compliant PPP operational framework.',
+      outcome:
+        'The project successfully advanced past the regulatory planning phase, secured critical government approvals, and established a clear roadmap to attract tier-one logistics operators.',
+    },
+    color: 'light',
+  },
+  {
+    id: 5,
+    number: '05',
+    title: 'Trade, Customs & Export Advisory',
+    tagline:
+      'Strategic customs optimization, compliance, and market access advisory under AfCFTA, AGOA, and global trade frameworks',
+    longDescription:
+      'Supporting businesses engaged in international trade and export-oriented operations.',
+    benefits: [
+      'Rigorous export compliance advisory and supply chain compliance auditing',
+      'Strategic customs & duty optimization to minimize landed costs and tariffs',
+      'Comprehensive trade documentation support and logistics facilitation',
+      'Specialized market access advisory under AfCFTA, AGOA, and international treaties',
+    ],
+    approach:
+      'We streamline global trade complexities by integrating cross-border regulatory compliance with supply chain efficiency. Our approach focuses on structuring duty-optimized supply chains, mitigating customs bottleneck risks, and positioning exporters to fully leverage regional and international preferential trade agreements.',
+    caseStudy: {
+      client: 'Agricultural Export Enterprise',
+      challenge:
+        'A large-scale exporter faced complex duty structures, customs clearance delays, and missed utilization targets for regional preferential trade tariffs.',
+      solution:
+        'Audited and re-structured their documentation workflows, implemented a customs optimization strategy, and aligned operations with AfCFTA compliance benchmarks.',
+      outcome:
+        'Reduced average customs clearance times, achieved complete regulatory compliance, and realized substantial tariff savings on regional shipments.',
+    },
+    color: 'dark',
+  },
+  {
+    id: 6,
+    number: '06',
+    title: 'ESG & Sustainability Advisory',
+    tagline:
+      'Driving green industrialization, carbon asset monetization, and climate finance solutions for sustainable enterprises',
+    longDescription:
+      'Driving sustainable industrialization through environmental, social, and governance solutions.',
+    benefits: [
+      'Comprehensive ESG compliance auditing, framework development, and reporting',
+      'Strategic green industrialization and renewable energy transition support',
+      'End-to-end carbon credit advisory, carbon removal, and biochar project structuring',
+      'Targeted climate finance advisory to unlock sustainable development capital',
+    ],
+    approach:
+      'We embed sustainability directly into industrial operations to create measurable commercial value. Our approach focuses on translating complex global ESG standards into practical operational frameworks, setting up high-integrity carbon removal projects, and aligning green assets with international climate finance criteria.',
+    caseStudy: {
+      client: 'Industrial Agro-Processor',
+      challenge:
+        'An industrial manufacturing facility wanted to transition to renewable energy and structure a biochar carbon removal project, but lacked the framework to attract green funding.',
+      solution:
+        'Designed a comprehensive green industrialization strategy, structured the carbon removal methodology, and aligned the project with climate finance requirements.',
+      outcome:
+        'Successfully established a compliant ESG reporting framework, unlocked verified carbon credit potential, and positioned the facility to capture premium sustainable investments.',
+    },
+    color: 'light',
+  },
+  {
+    id: 7,
+    number: '07',
+    title: 'Immigration & Workforce Solutions',
+    tagline:
+      'End-to-end workforce mobility, work permit processing, and local content compliance for seamless global operations',
+    longDescription:
+      'Supporting businesses with workforce mobility and regulatory employment compliance.',
+    benefits: [
+      'Streamlined investor & work permit processing with direct regulatory tracking',
+      'Comprehensive expatriate relocation support and transition advisory',
+      'Proactive immigration compliance auditing and workforce regulatory support',
+      'Strategic local content compliance frameworks to satisfy regional labor laws',
+    ],
+    approach:
+      'We mitigate the friction of international talent deployment by aligning immigration strategy with local labor laws. Our approach ensures complete compliance with statutory ratios, accelerates permit turnaround times, and provides hands-on relocation logistics to get your cross-border teams operational without legal bottlenecks.',
+    caseStudy: {
+      client: 'Multinational Engineering Firm',
+      challenge:
+        'An international firm needed to mobilize a specialized technical team for an SEZ project on a tight timeline while maintaining strict adherence to local content and employment quotas.',
+      solution:
+        'Managed the expedited processing of investor and specialist work permits, audited workforce ratios, and structured a compliant local talent integration plan.',
+      outcome:
+        'Successfully deployed the expatriate team ahead of schedule with zero regulatory disruptions, ensuring full compliance with local employment mandates.',
+    },
+    color: 'dark',
+  },
+  {
+    id: 8,
+    number: '08',
+    title: 'Capital & Transaction Advisory',
+    tagline:
+      'Strategic transaction structuring, investor readiness, and financial advisory to secure institutional and DFI capital',
+    longDescription:
+      'Helping businesses and developers access strategic capital and structure complex transactions.',
+    benefits: [
+      'Comprehensive project finance advisory and capital raising strategies',
+      'Rigorous investor readiness support and institutional financial due diligence',
+      'Optimized transaction structuring and complex Public-Private Partnership models',
+      'Targeted Development Finance Institution (DFI) and multilateral engagement',
+    ],
+    approach:
+      'We bridge the gap between capital seekers and tier-one financiers by engineering bankable investment opportunities. Our approach focuses on de-risking financial structures, validating assumptions through airtight due diligence, and curating transaction frameworks that align with the specific mandates of commercial lenders, private equity, and DFIs.',
+    caseStudy: {
+      client: 'Infrastructure Development Consortium',
+      challenge:
+        'A large-scale project developer required institutional-grade transaction structuring and investor readiness documentation to unlock critical DFI project financing.',
+      solution:
+        'Conducted extensive financial due diligence, built an optimized capital raising model, and structured the transaction to meet strict multilateral environmental and financial covenants.',
+      outcome:
+        'Successfully advanced the project to investor-ready status, opened active funding pipelines with major DFIs, and secured the initial tranche of strategic capital financing.',
+    },
+    color: 'light',
+  },
+  {
+    id: 9,
+    number: '09',
+    title: 'Digital & Innovation Advisory',
+    tagline:
+      'Architecting smart SEZ solutions, investor portals, and secure digital compliance engines for modern ecosystems',
+    longDescription:
+      'Modern solutions for smart industrial ecosystems and digital transformation.',
+    benefits: [
+      'Strategic planning and deployment of integrated Smart SEZ Solutions',
+      'Custom investor portal development to streamline onboarding and management',
+      'Robust e-governance advisory and automated digital compliance systems',
+      'Data engineering, reporting systems, and end-to-end operational digitalization',
+    ],
+    approach:
+      'We bridge physical industrial processes with modern software architectures to eliminate administrative friction. Our approach centers on developing scannable data pipelines, secure user portals with intuitive workflows, and automated compliance tracking systems that provide real-time reporting metrics to operators and regulatory authorities alike.',
+    caseStudy: {
+      client: 'Special Economic Zone Authority',
+      challenge:
+        'An industrial zone authority needed to modernize its paper-heavy investor application tracking and parcel management workflows to reduce processing turnaround times.',
+      solution:
+        'Designed a secure, centralized digital investor portal with integrated compliance reporting, data-driven tracking metrics, and an e-governance workflow engine.',
+      outcome:
+        'Reduced application processing times significantly, created absolute reporting clarity for management, and delivered a seamless, modern onboarding experience for incoming international enterprises.',
+    },
+    color: 'dark',
   },
 ];
 
