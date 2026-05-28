@@ -4,7 +4,7 @@ import type {StatItem} from '@/home/types';
 import {Badge, Button} from "@/components";
 
 
-interface CountryProfileProps {
+interface CompanyProfileProps {
   imageUrl: string;
   imageAlt: string;
   quote: string;
@@ -16,7 +16,7 @@ interface CountryProfileProps {
   onDownloadClick?: () => void;
 }
 
-export function CountryProfile({
+export function CompanyProfile({
                                  imageUrl,
                                  imageAlt,
                                  quote,
@@ -26,7 +26,7 @@ export function CountryProfile({
                                  stats,
                                  reportButtonText = 'Download 2024 Report',
                                  onDownloadClick,
-                               }: CountryProfileProps) {
+                               }: CompanyProfileProps) {
   return (
     <section className="bg-primary-900 py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
@@ -99,4 +99,3 @@ export function CountryProfile({
     </section>
   );
 }
-
