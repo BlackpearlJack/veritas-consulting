@@ -35,9 +35,10 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, [isHome]);
 
-  const baseNavClasses = 'fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out';
+  const positionClasses = isHome ? 'fixed top-0 left-0 right-0' : 'sticky top-0 left-0 right-0';
+  const baseNavClasses = `${positionClasses} z-50 transition-all duration-700 ease-out`;
   const scrolledClasses = 'bg-primary-900/95 backdrop-blur-md py-4';
-  const defaultClasses = isHome ? 'bg-transparent py-7' : 'bg-primary-900 py-7';
+  const defaultClasses = isHome ? 'bg-transparent py-7' : 'bg-primary-900 py-5';
 
   const navClassName = `${baseNavClasses} ${scrolled ? scrolledClasses : defaultClasses}`;
 

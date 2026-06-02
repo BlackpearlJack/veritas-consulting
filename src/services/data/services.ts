@@ -16,6 +16,7 @@ export interface ServiceItem {
 }
 
 export const services: ServiceItem[] = [
+  // list of services
   {
     id: 1,
     number: '01',
@@ -23,7 +24,7 @@ export const services: ServiceItem[] = [
     tagline:
       'End-to-end consultancy services for businesses, investors, and developers operating within Special Economic Zones',
     longDescription:
-      'We provide comprehensive end-to-end consultancy services for businesses, investors, and developers operating within Special Economic Zones. Our integrated approach combines regulatory expertise, licensing facilitation, compliance advisory, and government liaison to accelerate market entry and operational success. We deliver strategic support across all aspects of SEZ and EPZ operations, from initial licensing through operational management.',
+      'We provide end-to-end consultancy services for businesses, investors, and developers operating within Special Economic Zones.',
     benefits: [
       'Licensing of EPZ & SEZ enterprises',
       'Licensing of EPZ & SEZ developers and operators',

@@ -1,11 +1,19 @@
 import {useEffect, useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, useSearchParams} from 'react-router-dom';
 import {getNextServiceId, getPrevServiceId, getServiceById, services} from './data/services';
 import {LuChevronLeft, LuChevronRight} from 'react-icons/lu';
 
 export function ServiceSpotlight() {
   const navigate = useNavigate();
-  const [serviceId, setServiceId] = useState(services[0].id);
+  const [searchParams] = useSearchParams();
+  const queryId = searchParams.get('id');
+  const [serviceId, setServiceId] = useState(() => {
+    if (queryId) {
+      const parsed = parseInt(queryId, 10);
+      return isNaN(parsed) ? services[0].id : parsed;
+    }
+    return services[0].id;
+  });
 
   const service = getServiceById(serviceId) ?? services[0];
   const nextId = getNextServiceId(service.id);
@@ -20,7 +28,10 @@ export function ServiceSpotlight() {
       nextId={nextId}
       prevId={prevId}
       index={index}
-      onNavigate={setServiceId}
+      onNavigate={(id) => {
+        setServiceId(id);
+        navigate(`/services?id=${id}`, { replace: true });
+      }}
       onBack={() => navigate('/')}
     />
   );

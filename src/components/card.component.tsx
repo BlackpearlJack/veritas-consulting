@@ -63,7 +63,7 @@ function ServiceCard({
             >
               {service.description}
             </p>
-            <Link to="/contact">
+            <Link to={`/services?id=${service.id}`}>
               <Button
                 variant="ghost"
                 className={`mt-8 ${
