@@ -19,31 +19,34 @@ export const services: ServiceItem[] = [
   {
     id: 1,
     number: '01',
-    title: 'Special Economic Zone (SEZ) Advisory Services',
+    title: 'Investment Advisory Services',
     tagline:
-      'End-to-end advisory and on-the-ground support for SEZ developers and enterprises in Kenya',
+      'End-to-end consultancy services for businesses, investors, and developers operating within Special Economic Zones',
     longDescription:
-      'Veritas Crest is a leading advisor on Special Economic Zone (SEZ) matters in Kenya, with a proven track record of delivering strategic, results-driven solutions to a diverse portfolio of clients. We maintain an operational presence across all SEZs in the country, enabling seamless, on-the-ground advisory services to both zone developers and enterprises. Our close working relationship with the Special Economic Zones Authority (SEZA) gives us deep regulatory insight and a practical understanding of the evolving SEZ landscape.',
+      'We provide comprehensive end-to-end consultancy services for businesses, investors, and developers operating within Special Economic Zones. Our integrated approach combines regulatory expertise, licensing facilitation, compliance advisory, and government liaison to accelerate market entry and operational success. We deliver strategic support across all aspects of SEZ and EPZ operations, from initial licensing through operational management.',
     benefits: [
-      'Gazettement advisory and feasibility support for SEZ developers',
-      'End-to-end licensing for SEZ developers, operators, and enterprises',
-      'One-Stop-Shop coordination and government liaison with regulators',
-      'Operational and environmental compliance advisory services',
-      'Tax incentive activation and customs framework optimization',
-      'Liaising with KRA to effect iTax status for licensed entities',
-      'Obtaining work permits for SEZ enterprises via SEZA framework',
-      'Practical regulatory guidance informed by direct SEZA engagement'
+      'Licensing of EPZ & SEZ enterprises',
+      'Licensing of EPZ & SEZ developers and operators',
+      'Regulatory compliance advisory',
+      'Tax incentive and customs advisory',
+      'Government liaison and stakeholder coordination',
+      'Environmental and operational compliance advisory',
+      'Gazettement advisory including feasibility study preparation',
+      'KRA iTax status facilitation for licensed enterprises',
+      'SEZ operational advisory services',
+      'Work permit acquisition for SEZ enterprise personnel through SEZA',
+      'General SEZ & EPZ advisory services'
     ],
     approach:
-      'We combine regulatory insight, feasibility analysis and hands-on implementation to guide clients from concept to licensed, operational SEZ status. Our approach is pragmatic: we draft documentation required for gazettement, coordinate stakeholders across government and industry, secure licenses, and help enterprises operationalise within SEZs.',
+      'We accelerate investment success by removing administrative complexity and regulatory uncertainty. Our approach integrates licensing strategy with operational readiness, coordinates seamlessly across multiple government agencies through established stakeholder relationships, and provides pragmatic on-the-ground support as investors transition from licensing to operational status. We leverage operational presence across all major zones to deliver consistent, responsive advisory.',
     caseStudy: {
-      client: 'Confidential SEZ Developer',
+      client: 'International Investment Consortium',
       challenge:
-        'A large developer required gazettement and licensing for a mixed-use SEZ while coordinating multiple national agencies and a complex land title environment.',
+        'A multinational investor group required seamless licensing coordination across both SEZ and EPZ frameworks, tax incentive structuring, and rapid government liaison to launch operations within a tight timeline.',
       solution:
-        'Led feasibility work, prepared gazettement submissions and coordinated a One-Stop-Shop engagement with regulators, accelerating licensing and enabling phased construction.',
+        'Coordinated end-to-end licensing processes for multiple entities, structured tax-optimized investment arrangements, facilitated critical KRA engagements for iTax status, and managed expedited work permit processing through SEZA partnerships.',
       outcome:
-        'Developer obtained SEZ status and licenses within planned timelines enabling the first tranche of investors to mobilise on schedule.',
+        'Successfully licensed across both zones, achieved optimal tax incentive positioning, mobilized skilled workforce on schedule, and launched operations with zero regulatory delays.',
     },
     color: 'dark',
   },
